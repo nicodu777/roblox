@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nicodu777.github.io/roblox/sitemap.xml
