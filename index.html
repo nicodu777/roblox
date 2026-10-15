@@ -7,7 +7,7 @@
 <meta name="description" content="Création de sites web sur mesure pour cabinets, commerces et indépendants : sites vitrines, e-commerce, refonte, SEO.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Martian+Mono:wght@400;500&family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=Jost:wght@300;400;500&family=Abril+Fatface&family=Caveat:wght@600&family=Karla:wght@400;600&family=Big+Shoulders+Display:wght@800;900&family=Archivo:wght@400;600&family=Italiana&family=Work+Sans:wght@300;400;500&family=Marcellus&family=Mulish:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Martian+Mono:wght@400;500&family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=Jost:wght@300;400;500&family=Abril+Fatface&family=Caveat:wght@600&family=Karla:wght@400;600&family=Big+Shoulders+Display:wght@800;900&family=Archivo:wght@400;600&family=Italiana&family=Work+Sans:wght@300;400;500&family=Marcellus&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Mulish:wght@400;600&display=swap">
 <style>
 /* Layout: 1180px column. Floating pill header with scrollspy + CTA; hero thesis, then a full-width live showcase of five client identities (3D);
    a lab of four working demos; offers with one hue each; expanding sector panels; stop-motion method; guided contact form. */
@@ -148,7 +148,7 @@ section{padding-block:clamp(4rem,9vw,7rem)}
 .pv-artisan{--p-bg:#13213C;--p-surface:#F4F4F0;--p-fg:#FFFFFF;--p-ink:#13213C;--p-acc:#F5B800;--p-acc-ink:#13213C;--p-acc2:#FFFFFF;--p-line:rgba(19,33,60,.16);--p-fd:"Big Shoulders Display",Impact,sans-serif;--p-fb:"Archivo",Arial,sans-serif;--p-r:2px;--p-hw:900;--p-hs:normal;--p-ht:uppercase;
   --p-art:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px) 0 0/28px 28px,linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px) 0 0/28px 28px,linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px) 0 0/7px 7px,radial-gradient(circle at 78% 45%,#24407A,#13213C 68%)}
 .pv-boutique{--p-bg:#E9E6DD;--p-surface:#F5F3EE;--p-fg:#2F3A2F;--p-ink:#2F3A2F;--p-acc:#2F3A2F;--p-acc-ink:#F5F3EE;--p-acc2:#B5714E;--p-line:rgba(47,58,47,.18);--p-fd:"Italiana",Didot,serif;--p-fb:"Work Sans",Arial,sans-serif;--p-r:0px;--p-hw:400;--p-hs:normal;--p-ht:none;
-  --p-art:repeating-linear-gradient(0deg,rgba(47,58,47,.035) 0 2px,transparent 2px 5px),repeating-linear-gradient(90deg,rgba(47,58,47,.045) 0 1px,transparent 1px 4px),radial-gradient(circle at 75% 50%,#F3F0E8,transparent 60%),linear-gradient(120deg,#ECE8DF,#D9D3C3)}
+  --p-art:linear-gradient(115deg,transparent 28%,rgba(255,255,255,.42) 36%,transparent 44%,transparent 50%,rgba(255,255,255,.3) 57%,transparent 65%),repeating-linear-gradient(0deg,rgba(47,58,47,.035) 0 2px,transparent 2px 5px),repeating-linear-gradient(90deg,rgba(47,58,47,.045) 0 1px,transparent 1px 4px),radial-gradient(circle at 75% 50%,#F3F0E8,transparent 60%),linear-gradient(120deg,#ECE8DF,#D9D3C3)}
 .pv-bien{--p-bg:#EFE9F5;--p-surface:#FBF8FD;--p-fg:#3A2D4D;--p-ink:#3A2D4D;--p-acc:#8E62BF;--p-acc-ink:#FFFFFF;--p-acc2:#F2C6B4;--p-line:rgba(58,45,77,.14);--p-fd:"Marcellus",Georgia,serif;--p-fb:"Mulish",Arial,sans-serif;--p-r:22px;--p-hw:400;--p-hs:normal;--p-ht:none;
   --p-art:radial-gradient(circle at 76% 38%,#F6D3C4 0,transparent 42%),radial-gradient(circle at 58% 85%,#CDB8EA 0,transparent 48%),radial-gradient(circle at 12% 15%,#E7DEF3 0,transparent 55%),#EFE9F5}
 
@@ -262,9 +262,22 @@ section{padding-block:clamp(4rem,9vw,7rem)}
 .pv-boutique .mk-cta:hover::after{width:90px}
 .pv-boutique .mk-link{font-size:.8rem;opacity:.7}
 .pv-boutique .mk-card{padding:0;gap:.25rem}
-.pv-boutique .mk-n{display:block;aspect-ratio:4/3;max-width:100%;background:var(--sw) repeating-linear-gradient(0deg,rgba(0,0,0,.05) 0 2px,transparent 2px 5px);background-blend-mode:multiply;position:relative;overflow:hidden;margin-bottom:.6rem;transition:transform .6s var(--ease)}
-.pv-boutique .mk-n::after{content:"Ajouter au panier  +";position:absolute;left:0;right:0;bottom:0;padding:.6rem .8rem;font:500 .72rem/1 var(--p-fb);letter-spacing:.08em;background:var(--p-ink);color:var(--p-surface);transform:translateY(100%);transition:transform .4s var(--ease)}
-.pv-boutique .mk-card:hover .mk-n::after{transform:none}
+.pv-boutique .mk-n{display:block;aspect-ratio:4/3;max-width:100%;background-color:var(--sw);background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.07) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(255,255,255,.1) 0 1px,transparent 1px 3px),linear-gradient(160deg,rgba(255,255,255,.25),transparent 55%);position:relative;overflow:hidden;margin-bottom:.6rem;transition:transform .6s var(--ease),background-color .5s}
+.mk-add{position:absolute;left:0;right:0;bottom:0;padding:.7rem .8rem;border:0;font:500 .72rem/1 var(--p-fb);letter-spacing:.08em;text-align:left;background:var(--p-ink);color:var(--p-surface);transform:translateY(100%);transition:transform .4s var(--ease);cursor:pointer}
+.pv-boutique .mk-card:hover .mk-add,.mk-add:focus-visible{transform:none}
+.mk-heart{position:absolute;top:.5rem;right:.5rem;width:30px;height:30px;border-radius:50%;border:0;background:rgba(245,243,238,.88);color:var(--p-ink);font-size:.95rem;line-height:30px;cursor:pointer;transition:transform .3s var(--ease)}
+.mk-heart:hover{transform:scale(1.12)}.mk-heart.on{color:#B5714E;animation:pop .45s var(--ease)}
+.mk-tag{position:absolute;top:.6rem;left:.6rem;font:500 .58rem/1 var(--p-fb);font-style:normal;letter-spacing:.14em;text-transform:uppercase;background:var(--p-surface);color:var(--p-ink);padding:.38rem .5rem}
+.mk-dots{display:flex;gap:.4rem;margin-top:.15rem}
+.mk-dots button{width:14px;height:14px;border-radius:50%;border:1px solid rgba(0,0,0,.18);padding:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.mk-dots button:hover{transform:scale(1.25)}.mk-dots button.on{box-shadow:0 0 0 2px var(--p-surface),0 0 0 3px var(--p-ink)}
+.mk-strip{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem 1.5rem;padding-top:1rem;border-top:1px solid var(--p-line);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}
+.mk-strip span::before{content:"— ";opacity:.5}
+.mk-cart{position:relative;display:inline-grid;place-items:center;width:34px;height:34px;opacity:1!important}
+.mk-cart svg{width:19px;height:19px}
+.mk-badge{position:absolute;top:-1px;right:-5px;min-width:17px;height:17px;padding:0 4px;border-radius:99px;background:var(--p-acc2);color:#fff;font:600 .6rem/17px var(--p-fb);text-align:center}
+.mk-badge.bump{animation:pop .45s var(--ease)}
+.pv-boutique .mk-h em{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:400;color:var(--p-acc2)}
 .pv-boutique .mk-card:hover .mk-n{transform:scale(1.03)}
 .pv-boutique .mk-card h5{font-size:1.15rem}
 .pv-boutique .mk-m{font-weight:400;font-size:.85rem}
@@ -566,6 +579,63 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent);
 .term .tb i{width:9px;height:9px;border-radius:50%;background:#2B2F4A}
 .term p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
 .term .c{color:#8A8FB5}.term .i{color:#FFD84D}.term .o{color:#5FD39A}
+/* estimator */
+.est{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,3rem);align-items:start}
+@media (max-width:900px){.est{grid-template-columns:1fr}}
+.est-l{display:grid;gap:1.8rem}
+.etypes{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem}
+@media (max-width:700px){.etypes{grid-template-columns:1fr 1fr}}
+.etype{position:relative;cursor:pointer}
+.etype input,.ef input{position:absolute;opacity:0;width:1px;height:1px}
+.etype span{display:grid;gap:.35rem;align-content:start;height:100%;padding:1rem;border-radius:16px;border:1.5px solid var(--line);background:var(--surface);transition:transform .3s var(--ease),border-color .3s,background .3s,box-shadow .3s}
+.etype svg{width:22px;height:22px;color:var(--h)}
+.etype b{font:700 1rem/1.2 var(--f-display)}
+.etype small{font:400 .64rem/1.4 var(--f-mono);color:var(--muted)}
+.etype:hover span{transform:translateY(-3px);border-color:var(--h)}
+.etype input:checked+span{border-color:var(--h);background:color-mix(in srgb,var(--h) 10%,var(--surface));box-shadow:0 0 0 1px var(--h)}
+.etype input:focus-visible+span,.ef input:focus-visible+span{outline:3px solid var(--accent);outline-offset:2px}
+.efeat{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+@media (max-width:600px){.efeat{grid-template-columns:1fr}}
+.ef{position:relative;cursor:pointer}
+.ef span{display:flex;align-items:center;gap:.65rem;padding:.75rem .9rem;border-radius:12px;border:1px solid var(--line);background:var(--surface);font-size:.88rem;transition:border-color .25s,background .25s}
+.ef span::before{content:"";flex:none;width:18px;height:18px;border-radius:6px;border:1.5px solid var(--muted);background:center/12px no-repeat;transition:background-color .25s,border-color .25s}
+.ef:hover span{border-color:var(--ink)}
+.ef input:checked+span{border-color:var(--accent);background:var(--soft)}
+.ef input:checked+span::before{background-color:var(--accent);border-color:var(--accent);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E")}
+.ef input:disabled+span{cursor:default;opacity:.8}
+.ef em{margin-left:auto;font:500 .68rem/1 var(--f-mono);font-style:normal;color:var(--muted);white-space:nowrap}
+.est-row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.est-row b{font:800 1.3rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+#ePages{padding:0;border:0;background:none;accent-color:var(--accent)}
+#ePages:disabled{opacity:.4}
+.est-r{position:sticky;top:96px;background:var(--ink);color:var(--bg);border-radius:24px;padding:1.6rem;display:grid;gap:1rem;box-shadow:var(--shadow)}
+.est-r .eyebrow{color:var(--mark)}
+.etotal b{display:block;font:800 clamp(2.6rem,5vw,3.4rem)/1 var(--f-display);font-variant-numeric:tabular-nums}
+.etotal span{display:block;margin-top:.4rem;font:400 .7rem/1.4 var(--f-mono);color:color-mix(in srgb,var(--bg) 65%,var(--ink))}
+.ebar{display:flex;gap:2px;height:10px;border-radius:99px;overflow:hidden}
+.ebar i{height:100%;min-width:0;transition:flex-grow .5s var(--ease)}
+.elines{list-style:none;margin:0;padding:0;display:grid;gap:.45rem;font-size:.85rem}
+.elines li{display:flex;justify-content:space-between;gap:1rem;animation:mkfade .3s var(--ease) both}
+.elines li>span{display:flex;gap:.55rem;align-items:center;min-width:0}
+.elines i{width:8px;height:8px;border-radius:2px;flex:none}
+.elines b{font:500 .78rem/1.4 var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.emeta{display:flex;justify-content:space-between;gap:1rem;padding-top:.8rem;border-top:1px solid color-mix(in srgb,var(--bg) 18%,var(--ink));font-size:.85rem}
+.emeta[hidden]{display:none}
+.est-r .btn{justify-content:center;background:var(--mark);color:var(--mark-ink);border-color:var(--mark);--sw:var(--bg);--sw-ink:var(--ink)}
+.est-r .note{color:color-mix(in srgb,var(--bg) 60%,var(--ink))}
+/* legal */
+.legal{width:min(760px,calc(100% - 32px));max-height:86vh;padding:0;border:1px solid var(--line);border-radius:24px;background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.legal::backdrop{background:rgba(10,12,25,.55);backdrop-filter:blur(4px)}
+.legal[open]{animation:mkfade .35s var(--ease)}
+.lg-in{position:relative;padding:clamp(1.4rem,4vw,2.4rem);display:grid;gap:.8rem}
+.lg-in h2{font-size:clamp(1.6rem,3vw,2.1rem);padding-right:3rem}
+.lg-in h3{font-size:1.02rem;margin-top:.7rem}
+.lg-in p,.lg-in li{color:var(--muted);font-size:.92rem;max-width:68ch}
+.lg-in ul{margin:0;padding-left:1.1rem;display:grid;gap:.3rem}
+.lg-x{position:absolute;top:1rem;right:1rem}
+.todo{background:color-mix(in srgb,var(--mark) 55%,transparent);color:var(--ink);padding:0 .25em;border-radius:4px;font-weight:600}
+.lg-upd{font:400 .7rem/1.4 var(--f-mono)!important}
+footer a{color:inherit}
 /* offers */
 .offers{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .offer{--h:var(--o2);position:relative;isolation:isolate;overflow:hidden;display:grid;gap:.85rem;align-content:start;padding:1.6rem;border-radius:20px;background:var(--surface);border:1px solid var(--line);cursor:pointer;transition:transform .45s var(--ease),border-color .3s,box-shadow .45s}
@@ -743,14 +813,14 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
 <div class="prog" id="prog"></div>
 <header class="hdr" id="hdr"><div class="wrap"><div class="hdr-in">
   <a class="logo" href="#top"><i></i>Studio Nico</a>
-  <nav class="links" id="links" aria-label="Sections"><span class="ind"></span><a href="#vitrine">Exemples</a><a href="#lab">Compétences</a><a href="#offres">Offres</a><a href="#secteurs">Secteurs</a><a href="#methode">Méthode</a></nav>
+  <nav class="links" id="links" aria-label="Sections"><span class="ind"></span><a href="#vitrine">Exemples</a><a href="#lab">Compétences</a><a href="#offres">Offres</a><a href="#estimation">Estimation</a><a href="#secteurs">Secteurs</a><a href="#methode">Méthode</a></nav>
   <span class="avail">Réponse sous 24 h</span>
   <button class="icon-btn" id="themeBtn" type="button" aria-label="Thème : automatique"><svg data-ic="auto"></svg></button>
   <a class="btn acc sm nav-cta" href="#contact"><span>Devis<span class="long"> gratuit</span></span><svg class="arr" data-ic="arrow"></svg></a>
   <button class="icon-btn burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mnav"><svg data-ic="menu"></svg></button>
 </div></div></header>
 <nav class="mnav" id="mnav" aria-label="Menu mobile">
-  <a href="#vitrine">Exemples</a><a href="#lab">Compétences</a><a href="#offres">Offres</a><a href="#secteurs">Secteurs</a><a href="#methode">Méthode</a>
+  <a href="#vitrine">Exemples</a><a href="#lab">Compétences</a><a href="#offres">Offres</a><a href="#estimation">Estimation</a><a href="#secteurs">Secteurs</a><a href="#methode">Méthode</a>
   <a class="btn acc" href="#contact">Demander un devis gratuit <svg class="arr" data-ic="arrow"></svg></a>
 </nav>
 
@@ -957,6 +1027,33 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
     </div>
   </section>
 
+  <section id="estimation" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head row">
+        <div style="display:grid;gap:1rem"><p class="eyebrow">Estimation</p><h2 class="split rv">Combien coûterait votre site ?</h2></div>
+        <p class="lede rv" style="max-width:42ch">Cochez ce dont vous avez besoin, le prix s'ajuste en direct. Envoyez-moi ensuite cette estimation en un clic.</p>
+      </div>
+      <div class="est rv">
+        <div class="est-l">
+          <fieldset class="fs"><legend>1. Type de site</legend><div class="etypes" id="eType"></div></fieldset>
+          <div class="fs"><div class="est-row"><label class="lbl" for="ePages">2. Nombre de pages</label><b id="ePagesV"></b></div><input type="range" id="ePages" min="1" max="20" value="5"><span class="meta"><span id="ePagesH"></span></span></div>
+          <fieldset class="fs"><legend>3. Fonctionnalités</legend><div class="efeat" id="eFeat"></div></fieldset>
+          <fieldset class="fs"><legend>4. Contenus, délai et suivi</legend><div class="efeat" id="eMore"></div></fieldset>
+        </div>
+        <aside class="est-r" aria-live="polite">
+          <p class="eyebrow">Votre estimation</p>
+          <div class="etotal"><b id="eTot">0 €</b><span id="eRange"></span></div>
+          <div class="ebar" id="eBar" aria-hidden="true"></div>
+          <ul class="elines" id="eLines"></ul>
+          <div class="emeta"><span>Délai estimé</span><b id="eWeeks"></b></div>
+          <div class="emeta" id="eMaintRow" hidden><span>Suivi et maintenance</span><b>49 € / mois</b></div>
+          <button class="btn" type="button" id="eSend">Recevoir ce devis détaillé <svg class="arr" data-ic="arrow"></svg></button>
+          <p class="note" style="margin:0">Estimation indicative, hors nom de domaine et hébergement. Le prix final est fixé après notre échange.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
   <section id="secteurs" style="padding-top:0">
     <div class="wrap">
       <div class="sec-head row">
@@ -1095,14 +1192,38 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
         </div>
         <div class="fl"><input id="cTel" type="tel" autocomplete="tel" placeholder=" "><label for="cTel">Téléphone (facultatif)</label></div>
         <div><div class="fl" id="flMsg"><textarea id="cMsg" placeholder=" " maxlength="1200" rows="4" required></textarea><label for="cMsg">Décrivez votre projet</label><span class="cnt" id="cCnt">0 / 1200</span></div><p class="emsg" id="eMsg"></p></div>
-        <div class="fsub"><small>Vos informations servent uniquement à vous répondre.</small><button class="btn acc" type="submit">Envoyer ma demande <svg class="arr" data-ic="arrow"></svg></button></div>
+        <div class="fsub"><small>Vos informations servent uniquement à répondre à votre demande. <a href="#confidentialite" data-dlg="dlgPriv">Confidentialité</a></small><button class="btn acc" type="submit">Envoyer ma demande <svg class="arr" data-ic="arrow"></svg></button></div>
         <div class="done" id="done" hidden></div>
       </form>
     </div>
   </section>
 </main>
 
-<footer><div class="wrap"><span>© <span id="yr"></span> Studio Nico · Création de sites web</span><span>Photos : Palais de Justice de Paris, Benh Lieu Song (CC BY-SA 3.0) · Bouillabaisse, Benoît Prieur (CC0), via Wikimedia Commons</span></div></footer>
+<footer><div class="wrap"><span>© <span id="yr"></span> Studio Nico · <a href="#mentions" data-dlg="dlgMentions">Mentions légales</a> · <a href="#confidentialite" data-dlg="dlgPriv">Confidentialité</a></span><span>Photos : Palais de Justice de Paris, Benh Lieu Song (CC BY-SA 3.0) · Bouillabaisse, Benoît Prieur (CC0), via Wikimedia Commons</span></div></footer>
+
+<dialog class="legal" id="dlgMentions" aria-labelledby="dlgMT"><div class="lg-in">
+  <button class="icon-btn lg-x" type="button" data-close aria-label="Fermer"><svg data-ic="close"></svg></button>
+  <p class="eyebrow">Informations légales</p><h2 id="dlgMT">Mentions légales</h2>
+  <h3>Éditeur du site</h3><p>Le site Studio Nico est édité par <span class="todo">[Prénom Nom]</span>, entrepreneur individuel (EI).<br>SIRET : <span class="todo">[numéro SIRET]</span><br>Adresse : <span class="todo">[adresse postale]</span><br>E-mail : mathieuxwebpro@gmail.com<br>Téléphone : <span class="todo">[numéro de téléphone]</span></p>
+  <h3>Directeur de la publication</h3><p><span class="todo">[Prénom Nom]</span></p>
+  <h3>Hébergement</h3><p>GitHub, Inc. (service GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis. Téléphone : +1 877 448 4820. <span class="todo">[à adapter si vous changez d'hébergeur]</span></p>
+  <h3>Propriété intellectuelle</h3><p>Les contenus de ce site (textes, mise en page, illustrations, code) appartiennent à l'éditeur, sauf mention contraire. Toute reproduction sans autorisation écrite est interdite. Les sites présentés en exemple (Lemaire &amp; Associés, Le Comptoir de Marius, Moreau Rénovation, Atelier Lin &amp; Co, Claire Vidal) sont fictifs et servent uniquement à illustrer le savoir-faire.</p>
+  <h3>Crédits photos</h3><p>Palais de Justice de Paris : Benh Lieu Song, licence CC BY-SA 3.0. Bouillabaisse au Vieux-Port : Benoît Prieur, domaine public (CC0). Source : Wikimedia Commons.</p>
+  <h3>Tarifs</h3><p>Les tarifs et estimations affichés sont indicatifs et ne constituent pas une offre contractuelle. Seul un devis signé engage les deux parties.</p>
+  <p class="lg-upd">Dernière mise à jour : 15 octobre 2026</p>
+</div></dialog>
+<dialog class="legal" id="dlgPriv" aria-labelledby="dlgPT"><div class="lg-in">
+  <button class="icon-btn lg-x" type="button" data-close aria-label="Fermer"><svg data-ic="close"></svg></button>
+  <p class="eyebrow">Vos données</p><h2 id="dlgPT">Politique de confidentialité</h2>
+  <h3>Responsable du traitement</h3><p><span class="todo">[Prénom Nom]</span>, entrepreneur individuel, joignable à mathieuxwebpro@gmail.com.</p>
+  <h3>Données collectées</h3><p>Uniquement ce que vous saisissez dans le formulaire de contact ou le simulateur : nom, adresse e-mail, téléphone (facultatif), type de projet, secteur, budget, délai et message.</p>
+  <h3>Pourquoi ces données</h3><ul><li>Répondre à votre demande et vous recontacter.</li><li>Établir et suivre votre devis.</li></ul><p>Base légale : les mesures précontractuelles prises à votre demande (article 6.1.b du RGPD).</p>
+  <h3>Durée de conservation</h3><p>3 ans après notre dernier échange, puis suppression. Si un contrat est signé, les données sont conservées pendant la relation commerciale, puis le temps imposé par les obligations légales (10 ans pour les pièces comptables).</p>
+  <h3>Destinataires</h3><p>Vos données ne sont ni vendues ni cédées. Seul l'éditeur y a accès. <span class="todo">[Si l'envoi direct du formulaire est activé : les messages transitent par Formspree, Inc. (États-Unis), encadré par les clauses contractuelles types de la Commission européenne.]</span></p>
+  <h3>Cookies et mesure d'audience</h3><p>Ce site n'utilise aucun cookie publicitaire ni outil de mesure d'audience. Seule votre préférence d'affichage (thème clair ou sombre) est enregistrée sur votre appareil ; elle ne nécessite pas de consentement. Les polices de caractères sont chargées depuis Google Fonts : votre adresse IP est transmise à Google à cette occasion.</p>
+  <h3>Vos droits</h3><p>Vous pouvez accéder à vos données, les rectifier, les effacer, en limiter l'usage, vous opposer à leur traitement et les récupérer. Écrivez à mathieuxwebpro@gmail.com : réponse sous un mois. Vous pouvez aussi adresser une réclamation à la CNIL (cnil.fr).</p>
+  <p class="lg-upd">Dernière mise à jour : 15 octobre 2026</p>
+</div></dialog>
 <div class="toast" id="toast" role="status" hidden></div>
 
 <script>
@@ -1235,12 +1356,13 @@ const P = {
     hint:"Survolez les engrenages. Cliquez : marche arrière.", credit:"", alt:"Plan technique d'une installation de chauffage",
     cards:[{n:"01",t:"Dépannage",d:"Fuite, débouchage, 7 j/7"},{n:"02",t:"Chauffage",d:"Pose et entretien de chaudières"},{n:"03",t:"Salle de bain",d:"Rénovation complète"}],
     info:{addr:"Nantes et 30 km autour",hours:"Urgences 7 j/7 · 24 h/24",tel:"02 34 56 78 90"}, col:"#F5B800", bg:"#13213C"},
-  boutique:{label:"Boutique", ic:"bag", url:"atelier-lin.fr", name:"Atelier Lin & Co", logo:"Atelier Lin &amp; Co",
-    nav:["Collection","L'atelier","Panier (2)"], navcta:"", kicker:"Linge de maison · fabriqué en France",
-    h:"Le lin lavé, plié à la main.", p:"Draps, nappes et torchons tissés dans les Vosges, teints dans notre atelier. Livraison offerte dès 80 €.",
+  boutique:{label:"Boutique", ic:"bag", url:"atelier-lin.fr", name:"Atelier Lin & Co", logo:"Atelier Lin &amp; Co", cart:2,
+    nav:["Collection","L'atelier","Journal"], navcta:"", kicker:"Nouvelle collection · Automne",
+    h:"Le lin lavé, <em>plié à la main.</em>", p:"Draps, nappes et torchons tissés dans les Vosges, teints dans notre atelier. Livraison offerte dès 80 €.",
     short:"Linge de maison tissé dans les Vosges. Livraison offerte dès 80 €.", cta:"Découvrir la collection", link:"Notre atelier", sec:"La collection",
-    hint:"Survolez la pile : le linge se déplie.", credit:"", alt:"Pile de linge en lin aux tons naturels",
-    cards:[{sw:"#8FA58A",t:"Housse de couette",d:"Sauge · 240 × 220",m:"149 €"},{sw:"#B5714E",t:"Nappe",d:"Argile · 160 × 250",m:"79 €"},{sw:"#E4DCCB",t:"Torchons × 3",d:"Écru",m:"29 €"}],
+    hint:"Survolez le nuancier : choisissez votre coloris.", credit:"", alt:"Nuancier de tissus en lin aux tons naturels",
+    cards:[{sw:"#8FA58A",tag:"Nouveau",t:"Housse de couette",d:"Lin lavé · 240 × 220 cm",m:"149 €",dots:["#8FA58A","#E4DCCB","#3E4C6B"]},{sw:"#B5714E",t:"Nappe",d:"Lin lavé · 160 × 250 cm",m:"79 €",dots:["#B5714E","#CFC8B6"]},{sw:"#E4DCCB",tag:"Best-seller",t:"Torchons × 3",d:"Lin épais · 50 × 70 cm",m:"29 €",dots:["#E4DCCB","#8FA58A","#B5714E"]}],
+    strip:["Livraison offerte dès 80 €","Tissé dans les Vosges","Retours gratuits sous 30 jours"],
     info:{addr:"7 rue des Tisserands, 88000 Épinal",hours:"Mercredi au samedi · 10 h – 19 h",tel:"03 45 67 89 01"}, col:"#B5714E", bg:"#E9E6DD"},
   bien:{label:"Bien-être", ic:"leaf", url:"claire-vidal-sophrologie.fr", name:"Claire Vidal", logo:"Claire Vidal",
     nav:["Séances","Approche","Tarifs"], navcta:"Réserver", kicker:"Sophrologue · Bordeaux et en visio",
@@ -1250,7 +1372,7 @@ const P = {
     cards:[{t:"Séance individuelle",d:"60 minutes, au cabinet",m:"60 €"},{t:"Forfait 5 séances",d:"Suivi personnalisé",m:"270 €"},{t:"En visio",d:"Partout en France",m:"60 €"}],
     info:{addr:"18 cours de l'Intendance, 33000 Bordeaux",hours:"Lundi au samedi · 9 h – 20 h",tel:"05 67 89 01 23"}, col:"#8E62BF", bg:"#EFE9F5"}
 };
-const KEYS = Object.keys(P); let cur = "avocat", busy = false;
+const KEYS = Object.keys(P); let cur = "avocat", busy = false, cartN = 0;
 
 const heroMock = $("#heroMock"), mkNav = $("#mkNav"), mkCopy = $("#mkCopy"), mkCards = $("#mkCards"), mkHint = $("#mkHint"), mkCredit = $("#mkCredit"), heroUrl = $("#heroUrl"), seg = $("#seg");
 seg.insertAdjacentHTML("beforeend", KEYS.map(k => `<button type="button" data-k="${k}" aria-pressed="${k === cur}">${ic(P[k].ic)}${P[k].label}</button>`).join("")); icons(seg);
@@ -1258,9 +1380,9 @@ let urlTimer;
 function typeUrl(u){ clearInterval(urlTimer); let i = 0; heroUrl.textContent = ""; if (RM){ heroUrl.textContent = "https://" + u; return; } const full = "https://" + u; urlTimer = setInterval(() => { heroUrl.textContent = full.slice(0, ++i); if (i >= full.length) clearInterval(urlTimer); }, 22); }
 function fillMock(k){
   const d = P[k]; heroMock.className = "mk pv-" + k;
-  mkNav.innerHTML = `<span class="mk-logo">${d.logo}</span>${d.nav.map(n => `<a>${esc(n)}</a>`).join("")}${d.navcta ? `<a class="mk-navcta">${esc(d.navcta)}</a>` : ""}`;
+  mkNav.innerHTML = `<span class="mk-logo">${d.logo}</span>${d.nav.map(n => `<a>${esc(n)}</a>`).join("")}${d.navcta ? `<a class="mk-navcta">${esc(d.navcta)}</a>` : ""}${d.cart ? `<a class="mk-cart" aria-label="Panier">${ic("bag")}<span class="mk-badge" id="mkBadge">${cartN = d.cart}</span></a>` : ""}`; icons(mkNav);
   mkCopy.innerHTML = `<p class="mk-kicker">${esc(d.kicker)}</p><h4 class="mk-h">${d.h}</h4><p class="mk-p">${esc(d.p)}</p><div class="mk-btns"><a class="mk-cta">${esc(d.cta)}</a><a class="mk-link">${esc(d.link)}</a></div>`;
-  mkCards.innerHTML = d.cards.map(c => `<article class="mk-card"${c.sw ? ` style="--sw:${c.sw}"` : ""}><span class="mk-n">${c.n || ""}</span><h5>${esc(c.t)}</h5><p>${esc(c.d)}</p><span class="mk-m">${esc(c.m || "")}${k === "resto" ? '<svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="50" cy="20" rx="47" ry="17" pathLength="160"/></svg>' : ""}</span></article>`).join("");
+  mkCards.innerHTML = d.cards.map(c => `<article class="mk-card"${c.sw ? ` style="--sw:${c.sw}"` : ""}><div class="mk-n">${c.n || ""}${c.tag ? `<em class="mk-tag">${c.tag}</em>` : ""}${k === "boutique" ? '<button class="mk-heart" type="button" aria-label="Ajouter aux favoris" aria-pressed="false">♡</button><button class="mk-add" type="button">Ajouter au panier +</button>' : ""}</div><h5>${esc(c.t)}</h5><p>${esc(c.d)}</p>${c.dots ? `<span class="mk-dots">${c.dots.map((x, i) => `<button type="button" style="background:${x}" data-c="${x}" aria-label="Coloris ${i + 1}"${i ? "" : ' class="on"'}></button>`).join("")}</span>` : ""}<span class="mk-m">${esc(c.m || "")}${k === "resto" ? '<svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="50" cy="20" rx="47" ry="17" pathLength="160"/></svg>' : ""}</span></article>`).join("") + (d.strip ? `<div class="mk-strip">${d.strip.map(x => `<span>${esc(x)}</span>`).join("")}</div>` : "");
   mkHint.textContent = d.hint; mkCredit.textContent = d.credit; typeUrl(d.url);
   seg.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.k === k));
   moveInd(seg, seg.querySelector(`[data-k="${k}"]`));
@@ -1268,6 +1390,12 @@ function fillMock(k){
   renderResp(); a11yFill(); renderRespPre();
 }
 function switchTo(k){ if (k === cur) return; cur = k; fillMock(k); }
+mkCards.addEventListener("click", e => {
+  const add = e.target.closest(".mk-add"), h = e.target.closest(".mk-heart"), dot = e.target.closest(".mk-dots button");
+  if (add){ cartN++; const b = $("#mkBadge"); if (b){ b.textContent = cartN; b.classList.remove("bump"); void b.offsetWidth; b.classList.add("bump"); } add.textContent = "Ajouté ✓"; setTimeout(() => add.textContent = "Ajouter au panier +", 1200); }
+  if (h){ const on = h.getAttribute("aria-pressed") !== "true"; h.setAttribute("aria-pressed", on); h.textContent = on ? "♥" : "♡"; h.classList.toggle("on", on); }
+  if (dot){ dot.closest(".mk-card").style.setProperty("--sw", dot.dataset.c); dot.parentElement.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === dot)); }
+});
 seg.addEventListener("click", e => { const b = e.target.closest("button[data-k]"); if (b) switchTo(b.dataset.k); });
 addEventListener("resize", () => { moveInd(seg, seg.querySelector(`[data-k="${cur}"]`)); moveInd($(".tabs"), $('[role="tab"][aria-selected="true"]')); moveInd(links, activeLink); layoutDev(); });
 
@@ -1341,18 +1469,22 @@ function init2D(){
         click(){ dir *= -1; }};
     },
     boutique(){
-      const cols = ["#CFC8B6", "#B5714E", "#E4DCCB", "#8FA58A"], ink = ["#9E967F", "#874F33", "#B4A88F", "#5F7559"];
-      const layer = (c, d, i) => `<g class="ly"><g><rect x="-122" y="-21" width="244" height="42" rx="15" fill="${c}"/><rect x="-112" y="-17" width="200" height="6" rx="3" fill="#fff" opacity=".28"/>
-        <path d="M-106 9H90" stroke="${d}" stroke-width="1.4" stroke-dasharray="5 4" opacity=".55"/><rect x="92" y="-21" width="30" height="42" rx="15" fill="#000" opacity=".1"/>
-        ${i === 3 ? `<rect x="-60" y="-21" width="14" height="42" fill="#2F3A2F"/><g id="tag"><path d="M-53 21v16" stroke="#2F3A2F" stroke-width="1.5"/><rect x="-82" y="37" width="58" height="26" rx="3" fill="#F5F3EE" stroke="#2F3A2F" stroke-width="1"/><text x="-53" y="54" text-anchor="middle" font-family="Work Sans, sans-serif" font-size="10" fill="#2F3A2F">Lin lavé</text></g>` : ""}</g></g>`;
-      let o = 0, v = 0, ls, tag, all;
-      return {svg:`<defs>${SH}</defs><ellipse cx="200" cy="326" rx="150" ry="12" fill="url(#sh)"/><g id="all">${cols.map((c, i) => layer(c, ink[i], i)).join("")}</g>`,
-        init(){ ls = [...sv.querySelectorAll(".ly")]; tag = q("#tag"); all = q("#all"); },
-        update(t, p){ v += ((p.in ? 1 : 0) - o) * .06; v *= .82; o += v;
-          ls.forEach((l, i) => { const k = i - 1.5; at(l, `translate(${200 + k * 36 * o + (p.in ? p.x * i * 3 : 0)} ${300 - i * 40 - i * 16 * o}) rotate(${(k * 5 * o).toFixed(2)})`); });
-          if (tag) at(tag, `rotate(${(Math.sin(t * 2.2) * 7 * (o + .25)).toFixed(2)} -53 21)`);
-          at(all, `rotate(${RM ? 0 : (Math.sin(t * .6) * .8).toFixed(2)} 200 300)`); },
-        click(){ v += .2; }};
+      const SW = [["Sauge","#8FA58A"],["Argile","#B5714E"],["Écru","#E4DCCB"],["Sable","#CFC8B6"],["Indigo","#3E4C6B"]], rest = [-7,-4,-1,2,5], open = [-50,-28,-6,16,38];
+      let o = 0, v = 0, G, fan, idx = -1, lastIdx = -2, sel = null; const ang = [...rest], lift = [0,0,0,0,0];
+      return {svg:`<defs>${SH}<pattern id="wv" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M0 1h4M1 0v4" stroke="#000" stroke-opacity=".08"/></pattern></defs>
+        <ellipse cx="215" cy="318" rx="150" ry="12" fill="url(#sh)"/>
+        <g id="fan">${SW.map(([n, c]) => `<g class="swt"><rect x="-44" y="-238" width="88" height="250" rx="10" fill="${c}"/><rect x="-44" y="-238" width="88" height="250" rx="10" fill="url(#wv)"/><rect x="-44" y="-238" width="88" height="250" rx="10" fill="none" stroke="#000" stroke-opacity=".08"/>
+          <rect x="-44" y="-226" width="88" height="54" fill="#F5F3EE"/><text x="-34" y="-201" font-family="Italiana, serif" font-size="16" fill="#2F3A2F">${n}</text><text x="-34" y="-184" font-family="Work Sans, sans-serif" font-size="8" letter-spacing="1.6" fill="#2F3A2F" fill-opacity=".6">100 % LIN</text></g>`).join("")}</g>
+        <circle cx="215" cy="290" r="7" fill="#2F3A2F"/><circle cx="215" cy="290" r="2.5" fill="#F5F3EE"/>`,
+        init(){ G = [...sv.querySelectorAll(".swt")]; fan = q("#fan"); },
+        update(t, p){ v += ((p.in ? 1 : 0) - o) * .07; v *= .8; o += v; const oo = Math.max(0, Math.min(1.08, o));
+          idx = p.in ? Math.max(0, Math.min(4, Math.round((p.x + 1) / 2 * 4))) : -1;
+          G.forEach((g, i) => { const ta = rest[i] + (open[i] - rest[i]) * oo + (RM ? 0 : Math.sin(t * .8 + i) * .5 * (1 - oo)); ang[i] += (ta - ang[i]) * .18;
+            const tl = i === idx && oo > .5 ? -24 : sel === i ? -8 : 0; lift[i] += (tl - lift[i]) * .2;
+            at(g, `translate(215 290) rotate(${ang[i].toFixed(2)}) translate(0 ${lift[i].toFixed(1)})`); });
+          if (idx !== lastIdx){ lastIdx = idx; if (idx >= 0) fan.appendChild(G[idx]); else G.forEach(g => fan.appendChild(g)); } },
+        hint(t, p){ return p.in && idx >= 0 ? `Coloris ${SW[idx][0]} · cliquez pour l'essayer` : sel !== null ? `Coloris ${SW[sel][0]} appliqué à la housse` : null; },
+        click(){ if (idx < 0) return; sel = idx; const c = $("#mkCards .mk-card"); if (c) c.style.setProperty("--sw", SW[idx][1]); }};
     },
     bien(){
       const rx = [110, 88, 68, 50, 34], cols = ["#B5AAC4", "#A396B7", "#C8BDD6", "#978AAB", "#DAD1E5"], base = []; let y = 318;
@@ -1704,6 +1836,61 @@ form.addEventListener("submit", async e => {
   const ed = $("#edit"); if (ed) ed.addEventListener("click", () => { form.classList.remove("sent"); done.hidden = true; });
   done.querySelector("h3").setAttribute("tabindex", "-1"); done.querySelector("h3").focus();
 });
+
+/* ---------- estimator ---------- */
+const ET = [{k:"page", n:"Page unique", ic:"file", h:"--o1", base:490, inc:1, max:1, w:1.5, f:"Page de présentation", incl:[]},
+  {k:"vitrine", n:"Site vitrine", ic:"layout", h:"--o2", base:990, inc:6, max:20, w:3, f:"Site vitrine", incl:[]},
+  {k:"shop", n:"Boutique", ic:"cart", h:"--o3", base:1900, inc:5, max:20, w:6, f:"Boutique en ligne", incl:["pay","admin"]},
+  {k:"app", n:"Application", ic:"code", h:"--o5", base:3500, inc:5, max:20, w:8, f:"Application web", incl:["admin","account"]}];
+const FEAT = [["rdv","Rendez-vous / réservation",190,.5],["pay","Paiement en ligne",290,.5],["admin","Panneau d'administration",350,1],["account","Espace client (connexion)",450,1],
+  ["blog","Blog / actualités",150,.5],["lang","Version anglaise",290,.5],["gallery","Galerie photos",90,0],["seo","Référencement local avancé",190,0]];
+const MORE = [["texts","Rédaction des textes","40 € / page"],["photos","Sélection de photos","90 €"],["express","Livraison express","+20 %"],["maint","Suivi et maintenance","49 € / mois"]];
+$("#eType").innerHTML = ET.map((t, i) => `<label class="etype" style="--h:var(${t.h})"><input type="radio" name="etype" value="${t.k}"${i === 1 ? " checked" : ""}><span>${ic(t.ic)}<b>${t.n}</b><small>dès ${fr(t.base)} €<br>${t.inc} page${t.inc > 1 ? "s" : ""} incluse${t.inc > 1 ? "s" : ""}</small></span></label>`).join("");
+$("#eFeat").innerHTML = FEAT.map(([k, n, p]) => `<label class="ef"><input type="checkbox" value="${k}"${k === "rdv" || k === "seo" ? " checked" : ""}><span>${n}<em data-p="${p}">+${fr(p)} €</em></span></label>`).join("");
+$("#eMore").innerHTML = MORE.map(([k, n, p]) => `<label class="ef"><input type="checkbox" value="${k}"><span>${n}<em>${p}</em></span></label>`).join("");
+icons($("#eType"));
+const ePages = $("#ePages"), eTot = $("#eTot"); let eCur = 0, eAnim = 0, eLast = null;
+const SEGC = ["var(--o2)","var(--o6)","var(--o3)","var(--o5)","var(--o1)"];
+function estimate(){
+  const t = ET.find(x => x.k === $('input[name="etype"]:checked').value), more = k => $(`#eMore input[value="${k}"]`).checked;
+  ePages.disabled = t.max === 1; if (t.max === 1) ePages.value = 1;
+  const pages = +ePages.value, extraN = Math.max(0, pages - t.inc), extra = extraN * 90;
+  $("#ePagesV").textContent = pages + (pages > 1 ? " pages" : " page");
+  $("#ePagesH").textContent = t.max === 1 ? "Une seule page pour ce type de site" : `${t.inc} incluses · 90 € la page supplémentaire`;
+  const lines = [[`${t.n}`, t.base, 0]]; if (extra) lines.push([`${extraN} page${extraN > 1 ? "s" : ""} supplémentaire${extraN > 1 ? "s" : ""}`, extra, 1]);
+  let feat = 0, wk = t.w + extraN * .15;
+  $$("#eFeat .ef").forEach(l => { const inp = l.querySelector("input"), em = l.querySelector("em"), [k, n, p, w] = FEAT.find(f => f[0] === inp.value), inc = t.incl.includes(k);
+    if (inc){ if (!inp.disabled){ inp.dataset.was = inp.checked; } inp.checked = true; inp.disabled = true; em.textContent = "inclus"; }
+    else { if (inp.disabled){ inp.disabled = false; inp.checked = inp.dataset.was === "true"; } em.textContent = "+" + fr(p) + " €"; }
+    if (inp.checked && !inc){ feat += p; wk += w; lines.push([n, p, 2]); } else if (inc) lines.push([n, 0, 2]); });
+  let cont = 0; if (more("texts")){ cont += pages * 40; lines.push([`Rédaction des textes (${pages} p.)`, pages * 40, 3]); wk += .5; } if (more("photos")){ cont += 90; lines.push(["Sélection de photos", 90, 3]); }
+  const sub = t.base + extra + feat + cont, exp = more("express") ? Math.round(sub * .2 / 10) * 10 : 0; if (exp){ lines.push(["Livraison express", exp, 4]); wk *= .65; }
+  const total = sub + exp, segs = [t.base, extra, feat, cont, exp];
+  $("#eBar").innerHTML = segs.map((v, i) => `<i style="flex-grow:${v};background:${SEGC[i]}"></i>`).join("");
+  $("#eLines").innerHTML = lines.map(([n, v, c]) => `<li><span><i style="background:${SEGC[c]}"></i>${esc(n)}</span><b>${v ? fr(v) + " €" : "inclus"}</b></li>`).join("");
+  $("#eRange").textContent = `Fourchette probable : ${fr(Math.round(total * .9 / 10) * 10)} € – ${fr(Math.round(total * 1.15 / 10) * 10)} €`;
+  $("#eWeeks").textContent = `${Math.max(1, Math.floor(wk))} à ${Math.ceil(wk) + 1} semaines`;
+  $("#eMaintRow").hidden = !more("maint");
+  const from = eCur, id = ++eAnim; tween(600, k => { if (id !== eAnim) return; eCur = from + (total - from) * k; eTot.textContent = fr(Math.round(eCur)) + " €"; });
+  eLast = {t, pages, total, lines, maint:more("maint"), express:!!exp};
+}
+$(".est-l").addEventListener("change", estimate); ePages.addEventListener("input", estimate);
+onSeen($("#eTot"), estimate); estimate();
+$("#eSend").addEventListener("click", e => {
+  const d = eLast; if (!d) return;
+  const r = $(`#cType input[value="${d.t.f}"]`); if (r) r.checked = true;
+  cBud.value = Math.max(500, Math.min(10000, Math.round(d.total / 250) * 250)); bud();
+  const recap = `Estimation en ligne : ${fr(d.total)} € (${d.t.n}, ${d.pages} page${d.pages > 1 ? "s" : ""})\n` + d.lines.slice(1).map(([n, v]) => `- ${n}${v ? " : " + fr(v) + " €" : " (inclus)"}`).join("\n") + (d.maint ? "\n- Suivi et maintenance : 49 € / mois" : "") + "\n\n";
+  cMsg.value = recap + cMsg.value.replace(/^Estimation en ligne[\s\S]*?\n\n/, ""); fprog();
+  confetti(...centerOf(e.currentTarget), 50); say("Estimation ajoutée à votre demande");
+  setTimeout(() => { $("#contact").scrollIntoView({behavior:RM ? "auto" : "smooth"}); }, 500);
+});
+
+/* ---------- legal dialogs ---------- */
+function openDlg(id){ const d = document.getElementById(id); if (!d) return; if (d.showModal){ if (!d.open) d.showModal(); } else d.setAttribute("open", ""); }
+$$("[data-dlg]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); openDlg(a.dataset.dlg); }));
+$$(".legal").forEach(d => { d.querySelector("[data-close]").addEventListener("click", () => d.close ? d.close() : d.removeAttribute("open")); d.addEventListener("click", e => { if (e.target === d) d.close(); }); });
+if (location.hash === "#mentions") openDlg("dlgMentions"); if (location.hash === "#confidentialite") openDlg("dlgPriv");
 
 /* ---------- boot ---------- */
 $("#yr").textContent = new Date().getFullYear();
