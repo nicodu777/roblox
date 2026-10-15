@@ -16,4 +16,6 @@ Plusieurs petits sites d'exemple bien distincts, pour aider le client à défini
 ## En attente
 - Adresse Formspree, pour recevoir les demandes du formulaire.
 - Liens et captures des vrais sites clients (section « Ils m'ont fait confiance »).
-- Infos pour les mentions légales : nom, SIRET, adresse, téléphone.
+- Infos pour les mentions légales et les CGV : nom, SIRET, adresse, téléphone.
+- CGV : moyens de paiement acceptés, médiateur de la consommation (obligatoire pour les clients particuliers), ville du tribunal, taux horaire des retouches (45 € par défaut).
+- Faire relire les CGV et mentions légales si possible.

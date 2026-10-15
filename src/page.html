@@ -693,6 +693,8 @@ footer a{color:inherit}
 @media (max-width:760px){.paybox{grid-template-columns:1fr}}
 .pb-i{display:grid;grid-template-columns:auto 1fr;gap:.85rem;padding:1.1rem 1.25rem;border-radius:16px;background:var(--surface);border:1px solid var(--line);font-size:.88rem;line-height:1.5;color:var(--muted)}
 .pb-i svg{width:22px;height:22px;color:var(--accent)}
+.pb-i a{color:var(--accent)}
+.lg-in a{color:var(--accent)}
 .pb-i b{display:block;color:var(--ink);font-size:.98rem;margin-bottom:.15rem}
 .note{margin-top:1rem;font:400 .7rem/1.6 var(--f-body);color:var(--muted)}
 
@@ -1099,7 +1101,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
       </div>
       <p class="note">Boutique en ligne : +20 € / mois sur les formules de suivi (paiements, extensions, stocks). Tarifs indicatifs, le prix final est fixé dans le devis.</p>
       <div class="paybox rv">
-        <div class="pb-i"><svg data-ic="card"></svg><div><b>Paiement en 3 fois sans frais dès 990 €</b>Acompte de 30 % à la commande, réglé en une fois. Le solde en 3 versements : à la mise en ligne, puis à 30 et 60 jours.</div></div>
+        <div class="pb-i"><svg data-ic="card"></svg><div><b>Paiement en 3 fois sans frais dès 990 €</b>Acompte de 30 % à la commande, réglé en une fois. Le solde en 3 versements : à la mise en ligne, puis à 30 et 60 jours. <a href="#cgv" data-dlg="dlgCGV">Conditions de vente</a></div></div>
         <div class="pb-i"><svg data-ic="receipt"></svg><div><b>Prix nets, sans TVA</b>TVA non applicable, art. 293 B du CGI. Le prix affiché est le prix que vous payez.</div></div>
       </div>
     </div>
@@ -1296,7 +1298,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
   </section>
 </main>
 
-<footer><div class="wrap"><span>© <span id="yr"></span> Studio Nico · <a href="#mentions" data-dlg="dlgMentions">Mentions légales</a> · <a href="#confidentialite" data-dlg="dlgPriv">Confidentialité</a></span><span>Photos : Palais de Justice de Paris, Benh Lieu Song (CC BY-SA 3.0) · Bouillabaisse, Benoît Prieur (CC0), via Wikimedia Commons</span></div></footer>
+<footer><div class="wrap"><span>© <span id="yr"></span> Studio Nico · <a href="#mentions" data-dlg="dlgMentions">Mentions légales</a> · <a href="#confidentialite" data-dlg="dlgPriv">Confidentialité</a> · <a href="#cgv" data-dlg="dlgCGV">CGV</a></span><span>Photos : Palais de Justice de Paris, Benh Lieu Song (CC BY-SA 3.0) · Bouillabaisse, Benoît Prieur (CC0), via Wikimedia Commons</span></div></footer>
 
 <dialog class="legal" id="dlgMentions" aria-labelledby="dlgMT"><div class="lg-in">
   <button class="icon-btn lg-x" type="button" data-close aria-label="Fermer"><svg data-ic="close"></svg></button>
@@ -1306,7 +1308,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
   <h3>Hébergement</h3><p>GitHub, Inc. (service GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis. Téléphone : +1 877 448 4820. <span class="todo">[à adapter si vous changez d'hébergeur]</span></p>
   <h3>Propriété intellectuelle</h3><p>Les contenus de ce site (textes, mise en page, illustrations, code) appartiennent à l'éditeur, sauf mention contraire. Toute reproduction sans autorisation écrite est interdite. Les sites présentés en exemple (Lemaire &amp; Associés, Le Comptoir de Marius, Moreau Rénovation, Atelier Lin &amp; Co, Claire Vidal) sont fictifs et servent uniquement à illustrer le savoir-faire.</p>
   <h3>Crédits photos</h3><p>Palais de Justice de Paris : Benh Lieu Song, licence CC BY-SA 3.0. Bouillabaisse au Vieux-Port : Benoît Prieur, domaine public (CC0). Source : Wikimedia Commons.</p>
-  <h3>Tarifs</h3><p>Les tarifs et estimations affichés sont indicatifs et ne constituent pas une offre contractuelle. Seul un devis signé engage les deux parties. Prix nets : TVA non applicable, art. 293 B du CGI.</p>
+  <h3>Tarifs</h3><p>Les tarifs et estimations affichés sont indicatifs et ne constituent pas une offre contractuelle. Seul un devis signé engage les deux parties. Prix nets : TVA non applicable, art. 293 B du CGI. Voir aussi les <a href="#cgv" data-dlg="dlgCGV">conditions générales de vente</a>.</p>
   <p class="lg-upd">Dernière mise à jour : 15 octobre 2026</p>
 </div></dialog>
 <dialog class="legal" id="dlgPriv" aria-labelledby="dlgPT"><div class="lg-in">
@@ -1319,6 +1321,25 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
   <h3>Destinataires</h3><p>Vos données ne sont ni vendues ni cédées. Seul l'éditeur y a accès. Les messages envoyés par le formulaire transitent par Formspree, Inc. (États-Unis), prestataire d'envoi d'e-mails, dans le cadre des clauses contractuelles types de la Commission européenne.</p>
   <h3>Cookies et mesure d'audience</h3><p>Ce site n'utilise aucun cookie publicitaire ni outil de mesure d'audience. Seule votre préférence d'affichage (thème clair ou sombre) est enregistrée sur votre appareil ; elle ne nécessite pas de consentement. Les polices de caractères sont hébergées sur ce site : aucune donnée n'est transmise à un service tiers.</p>
   <h3>Vos droits</h3><p>Vous pouvez accéder à vos données, les rectifier, les effacer, en limiter l'usage, vous opposer à leur traitement et les récupérer. Écrivez à mathieuxwebpro@gmail.com : réponse sous un mois. Vous pouvez aussi adresser une réclamation à la CNIL (cnil.fr).</p>
+  <p class="lg-upd">Dernière mise à jour : 15 octobre 2026</p>
+</div></dialog>
+<dialog class="legal" id="dlgCGV" aria-labelledby="dlgCT"><div class="lg-in">
+  <button class="icon-btn lg-x" type="button" data-close aria-label="Fermer"><svg data-ic="close"></svg></button>
+  <p class="eyebrow">Conditions de vente</p><h2 id="dlgCT">Conditions générales de vente</h2>
+  <h3>1. Objet</h3><p>Ces conditions s'appliquent à toutes les prestations de Studio Nico (<span class="todo">[Prénom Nom]</span>, entrepreneur individuel, SIRET <span class="todo">[numéro SIRET]</span>) : création, refonte, hébergement et suivi de sites web. Elles sont acceptées par le client lors de la signature du devis.</p>
+  <h3>2. Devis et commande</h3><p>Chaque projet fait l'objet d'un devis gratuit et détaillé, valable 30 jours. La commande est ferme à réception du devis signé et de l'acompte.</p>
+  <h3>3. Prix</h3><p>Les prix sont indiqués en euros et nets : TVA non applicable, art. 293 B du CGI. Le prix applicable est celui du devis signé. Les tarifs affichés sur le site et le simulateur sont indicatifs.</p>
+  <h3>4. Paiement</h3><ul><li><b>Acompte :</b> 30 % du montant à la commande, réglé en une fois. Les travaux commencent à sa réception.</li><li><b>Solde :</b> à la mise en ligne. Pour un projet d'au moins 990 €, le solde peut être réglé en 3 fois sans frais : à la mise en ligne, puis à 30 et 60 jours.</li><li><b>Moyens de paiement :</b> virement bancaire <span class="todo">[autres moyens acceptés]</span>.</li><li><b>Retard de paiement :</b> pour un client professionnel, pénalités au taux égal à trois fois le taux d'intérêt légal, plus une indemnité forfaitaire de 40 € pour frais de recouvrement (art. L441-10 du Code de commerce). En cas d'échéance impayée, les sommes restantes deviennent exigibles et, après une relance restée sans effet pendant 15 jours, l'hébergement peut être suspendu.</li></ul>
+  <h3>5. Déroulement et délais</h3><p>Les délais annoncés sont indicatifs et courent à partir de la réception de l'acompte et des contenus (textes, photos, logo, accès). Un retard dans la fourniture des contenus ou des validations décale d'autant la livraison.</p>
+  <h3>6. Retouches</h3><p>Sont inclus : deux séries de retouches sur la maquette et une série après le développement. Les demandes supplémentaires ou hors devis sont facturées 45 € de l'heure, après accord du client.</p>
+  <h3>7. Validation et mise en ligne</h3><p>Le site est d'abord présenté sur un lien de prévisualisation. Le client dispose de 7 jours pour signaler une anomalie. Sans retour dans ce délai, ou dès la mise en ligne à sa demande, le site est considéré comme validé.</p>
+  <h3>8. Obligations du client</h3><p>Le client fournit les contenus nécessaires et garantit disposer des droits sur ceux-ci (textes, images, marques). Il reste responsable des informations publiées sur son site.</p>
+  <h3>9. Propriété du site</h3><p>Le site et ses droits d'utilisation sont transférés au client après le paiement intégral. Jusque-là, Studio Nico en reste propriétaire. Sauf refus écrit du client, Studio Nico peut présenter la réalisation dans son portfolio.</p>
+  <h3>10. Hébergement et nom de domaine</h3><p>Chaque création inclut 12 mois d'hébergement et un nom de domaine, enregistré au nom du client. À la fin de cette période, le client choisit une formule mensuelle (hébergement seul 12 €, suivi Essentiel 29 €, suivi Sérénité 59 €, +20 € pour une boutique sur les formules de suivi), ou demande le transfert de son domaine et de ses fichiers, fourni gratuitement. Sans formule choisie ni transfert, l'hébergement est suspendu après relance.</p>
+  <h3>11. Formules mensuelles</h3><p>Les formules sont sans engagement, payables mensuellement d'avance et résiliables avec un préavis d'un mois. Les heures de modifications incluses ne sont pas reportables d'un mois sur l'autre.</p>
+  <h3>12. Responsabilité</h3><p>Studio Nico est tenu à une obligation de moyens. Sa responsabilité ne peut être engagée pour les contenus fournis par le client, ni pour les interruptions des services tiers (hébergeur, paiement en ligne, envoi d'e-mails). Elle est limitée au montant payé pour la prestation concernée.</p>
+  <h3>13. Rétractation (clients particuliers)</h3><p>Un client consommateur ayant conclu le contrat à distance dispose de 14 jours pour se rétracter (art. L221-18 du Code de la consommation). S'il demande que les travaux commencent avant la fin de ce délai, les prestations déjà réalisées restent dues.</p>
+  <h3>14. Médiation et litiges</h3><p>En cas de litige, une solution amiable est recherchée en priorité. Un client consommateur peut recourir gratuitement au médiateur de la consommation : <span class="todo">[nom et site du médiateur]</span>. Ces conditions sont soumises au droit français. Pour les professionnels, le tribunal compétent est celui de <span class="todo">[ville]</span>.</p>
   <p class="lg-upd">Dernière mise à jour : 15 octobre 2026</p>
 </div></dialog>
 <div class="toast" id="toast" role="status" hidden></div>
@@ -1979,7 +2000,7 @@ function setEst(k, plan){ if (k){ const r = $(`input[name="etype"][value="${k}"]
 function openDlg(id){ const d = document.getElementById(id); if (!d) return; if (d.showModal){ if (!d.open) d.showModal(); } else d.setAttribute("open", ""); }
 $$("[data-dlg]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); openDlg(a.dataset.dlg); }));
 $$(".legal").forEach(d => { d.querySelector("[data-close]").addEventListener("click", () => d.close ? d.close() : d.removeAttribute("open")); d.addEventListener("click", e => { if (e.target === d) d.close(); }); });
-if (location.hash === "#mentions") openDlg("dlgMentions"); if (location.hash === "#confidentialite") openDlg("dlgPriv");
+if (location.hash === "#mentions") openDlg("dlgMentions"); if (location.hash === "#confidentialite") openDlg("dlgPriv"); if (location.hash === "#cgv") openDlg("dlgCGV");
 
 /* ---------- boot ---------- */
 $("#yr").textContent = new Date().getFullYear();
