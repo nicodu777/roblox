@@ -11,6 +11,10 @@ def sub(html, fn):
 # Site autonome
 head, rest = src.split("</style>", 1)
 head = head.replace('<meta name="claude:viewport-fit-sides" content="cover">\n', "")
+# Polices hébergées localement (RGPD : aucune adresse IP transmise à Google)
+import re as _re
+head = _re.sub(r'<link rel="preconnect"[^>]*>\n', "", head)
+head = _re.sub(r'<link rel="stylesheet" href="https://fonts.googleapis.com[^"]*">', '<link rel="stylesheet" href="fonts/fonts.css">', head)
 head = head.replace("*{box-sizing:border-box}", "*{box-sizing:border-box}\nbody{margin:0}\nimg{max-width:100%}\n[hidden]{display:none!important}\n:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}", 1)
 site = ('<!doctype html>\n<html lang="fr">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
