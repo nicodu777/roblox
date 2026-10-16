@@ -1491,7 +1491,7 @@ const P = {
     cards:[{t:"Séance individuelle",d:"60 minutes, au cabinet",m:"60 €"},{t:"Forfait 5 séances",d:"Suivi personnalisé",m:"270 €"},{t:"En visio",d:"Partout en France",m:"60 €"}],
     info:{addr:"18 cours de l'Intendance, 33000 Bordeaux",hours:"Lundi au samedi · 9 h – 20 h",tel:"05 67 89 01 23"}, col:"#8E62BF", bg:"#EFE9F5"}
 };
-const KEYS = Object.keys(P); let cur = "avocat", busy = false, cartN = 0;
+const KEYS = Object.keys(P); let cur = "artisan", busy = false, cartN = 0;
 
 const heroMock = $("#heroMock"), mkNav = $("#mkNav"), mkCopy = $("#mkCopy"), mkCards = $("#mkCards"), mkHint = $("#mkHint"), mkCredit = $("#mkCredit"), heroUrl = $("#heroUrl"), seg = $("#seg");
 seg.insertAdjacentHTML("beforeend", KEYS.map(k => `<button type="button" data-k="${k}" aria-pressed="${k === cur}">${ic(P[k].ic)}${P[k].label}</button>`).join("")); icons(seg);
@@ -1533,18 +1533,28 @@ function init2D(){
     return d + `Z M${hole} 0A${hole} ${hole} 0 1 0 ${-hole} 0A${hole} ${hole} 0 1 0 ${hole} 0Z`; }
   const B = {
     avocat(){
-      const G = "#C9A45C", Lt = "#E8D3A0";
-      const pan = id => `<g id="${id}"><g class="sw"><path d="M0 0L-50 118M0 0L50 118" stroke="${G}" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M-58 118Q0 160 58 118Z" fill="${G}"/><path d="M-58 118H58" stroke="${Lt}" stroke-width="3" stroke-linecap="round"/></g></g>`;
+      const G = "#C9A45C", Lt = "#E8D3A0", Dk = "#9C7B3C";
+      const dossier = `<g transform="translate(-22 104)"><rect x="0" y="0" width="40" height="12" rx="1.5" fill="#F3EEE4"/><rect x="3" y="-5" width="38" height="8" rx="1.5" fill="#E4DCCB"/><rect x="-2" y="5" width="44" height="4" fill="${Dk}"/><path d="M6 -1h22" stroke="${Dk}" stroke-opacity=".5"/></g>`;
+      const gavel = `<g transform="translate(0 110) rotate(-14)"><rect x="-26" y="-3" width="40" height="5" rx="2.5" fill="#6B4A2B"/><rect x="10" y="-10" width="16" height="19" rx="3" fill="#7B5532"/><rect x="10" y="-10" width="16" height="4" rx="2" fill="${G}"/><rect x="10" y="5" width="16" height="4" rx="2" fill="${G}"/></g>`;
+      const pan = (id, load) => `<g id="${id}"><g class="sw"><path d="M0 0L-52 118M0 0L52 118M0 0L0 112" stroke="${G}" stroke-width="2.4" stroke-dasharray="4 2.5" fill="none"/><circle r="4.5" fill="${G}"/>
+        ${load}<path d="M-62 118Q0 160 62 118Z" fill="${G}"/><path d="M-62 118Q0 160 62 118" fill="none" stroke="${Dk}" stroke-width="2"/><path d="M-62 118H62" stroke="${Lt}" stroke-width="4" stroke-linecap="round"/><path d="M-30 130Q0 140 22 132" stroke="${Lt}" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".7"/></g></g>`;
       let a = 0, v = 0, beam, L, R;
-      return {svg:`<ellipse cx="200" cy="330" rx="110" ry="8" fill="#000" opacity=".28"/>
-        <path d="M148 324H252" stroke="${G}" stroke-width="6" stroke-linecap="round"/><path d="M166 324Q200 288 234 324Z" fill="${G}"/>
-        <path d="M200 304V114" stroke="${G}" stroke-width="6" stroke-linecap="round"/><circle cx="200" cy="84" r="10" fill="none" stroke="${G}" stroke-width="3"/><path d="M200 94v8" stroke="${G}" stroke-width="3"/>
-        ${pan("pL")}${pan("pR")}
-        <g id="beam"><path d="M64 104H336" stroke="${G}" stroke-width="5" stroke-linecap="round"/><circle cx="200" cy="104" r="9" fill="${G}"/><circle cx="200" cy="104" r="3.5" fill="#0E1726"/></g>`,
+      return {svg:`<defs>${SH}<radialGradient id="halo"><stop offset="0" stop-color="${G}" stop-opacity=".28"/><stop offset="1" stop-color="${G}" stop-opacity="0"/></radialGradient></defs>
+        <circle cx="200" cy="170" r="150" fill="url(#halo)"/><ellipse cx="200" cy="334" rx="120" ry="8" fill="#000" opacity=".3"/>
+        <rect x="134" y="318" width="132" height="12" rx="2" fill="${Dk}"/><rect x="150" y="306" width="100" height="13" rx="2" fill="${G}"/><path d="M150 308H250" stroke="${Lt}" stroke-width="2"/>
+        <path d="M168 306Q200 276 232 306Z" fill="${G}"/><path d="M176 304Q200 284 224 304" stroke="${Lt}" stroke-width="2" fill="none"/>
+        <rect x="186" y="282" width="28" height="9" rx="2" fill="${Dk}"/>
+        <rect x="191" y="122" width="18" height="162" fill="${G}"/><rect x="200" y="122" width="9" height="162" fill="${Dk}" opacity=".45"/><path d="M196 128V278M204 128V278" stroke="${Lt}" stroke-width="1.6" opacity=".8"/>
+        <rect x="184" y="112" width="32" height="11" rx="2" fill="${G}"/><path d="M184 114H216" stroke="${Lt}" stroke-width="2"/>
+        <path d="M200 96C192 86 194 74 200 64C206 74 208 86 200 96Z" fill="${Lt}"/><path d="M200 96C196 89 197 81 200 75C203 81 204 89 200 96Z" fill="${G}"/><rect x="195" y="96" width="10" height="16" rx="2" fill="${G}"/>
+        ${pan("pL", dossier)}${pan("pR", gavel)}
+        <g id="beam"><path d="M66 106Q200 92 334 106" stroke="${G}" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M70 103Q200 90 330 103" stroke="${Lt}" stroke-width="2" fill="none"/>
+          <circle cx="64" cy="106" r="7" fill="none" stroke="${G}" stroke-width="3"/><circle cx="336" cy="106" r="7" fill="none" stroke="${G}" stroke-width="3"/>
+          <path d="M200 88L212 100L200 112L188 100Z" fill="${G}"/><path d="M200 92L208 100L200 108L192 100Z" fill="${Lt}"/><circle cx="200" cy="100" r="3" fill="#0E1726"/></g>`,
         init(){ beam = q("#beam"); L = q("#pL"); R = q("#pR"); },
         update(t, p){ const tg = p.in ? p.x * 15 : (RM ? 0 : Math.sin(t * .9) * 1.5); v += (tg - a) * .05; v *= .88; a += v;
           const r = a * Math.PI / 180, c = Math.cos(r) * 136, s = Math.sin(r) * 136;
-          at(beam, `rotate(${a.toFixed(2)} 200 104)`); at(L, `translate(${200 - c} ${104 - s})`); at(R, `translate(${200 + c} ${104 + s})`);
+          at(beam, `rotate(${a.toFixed(2)} 200 100)`); at(L, `translate(${200 - c} ${100 + 6 - s})`); at(R, `translate(${200 + c} ${100 + 6 + s})`);
           const sw = `rotate(${(-v * 4).toFixed(2)})`; at(L.firstChild, sw); at(R.firstChild, sw); },
         click(){ v += 3; }};
     },
