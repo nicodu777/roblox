@@ -23,8 +23,16 @@ Permettre au client de modifier son site lui-même, sans toucher au code.
 - Briques possibles : GrapesJS (glisser-déposer open source), TinaCMS ou Decap CMS (édition de contenu).
 - Offre : inclus dans Vitrine Pro et Boutique, ou en option (vers 190 €).
 
-## Petites retouches à décider
-- Section Secteurs : mettre aussi « Artisans et bâtiment » en premier panneau ouvert (comme la vitrine) ?
+## 4. Référencement (SEO) : travail à distance, toute la France
+- Villes ciblées (déjà citées sur le site et dans la fiche Google) : Paris, Lyon, Marseille, Toulouse, Bordeaux, Lille, Nantes, Nice, Strasbourg, Montpellier, Rennes.
+- Créer des pages dédiées par ville et par métier : « Création de site internet à Lyon », « Site pour avocat », « Site pour restaurant », « Site pour artisan »…
+- Créer une fiche Google Business (entreprise sans adresse publique, zone desservie : France).
+- Une fois en ligne : déclarer le site dans Google Search Console et envoyer le sitemap.xml.
+
+## 5. Section « Qui suis-je » et réalisations (prototype à corriger)
+- Remplacer le « N » par une vraie photo de Nicolas et relire le texte.
+- Site de Sonia (avocate en droit du travail, Barreau de Paris) : lui demander son accord pour le montrer, puis ajouter capture d'écran, lien et un avis client quand il sera en ligne.
+- Créer l'adresse e-mail pro sur Hostinger avec le nom de domaine, puis remplacer mathieuxwebpro@gmail.com partout.
 
 ## En attente
 - Adresse Formspree, pour recevoir les demandes du formulaire.
