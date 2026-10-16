@@ -887,14 +887,14 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
 <div class="prog" id="prog"></div>
 <header class="hdr" id="hdr"><div class="wrap"><div class="hdr-in">
   <a class="logo" href="#top"><i></i>Studio Nico</a>
-  <nav class="links" id="links" aria-label="Sections"><span class="ind"></span><a href="#vitrine">Exemples</a><a href="#lab">Compétences</a><a href="#apropos">À propos</a><a href="#offres">Offres</a><a href="#estimation">Estimation</a><a href="#methode">Méthode</a></nav>
+  <nav class="links" id="links" aria-label="Sections"><span class="ind"></span><a href="#vitrine">Exemples</a><a href="#lab">Compétences</a><a href="#apropos">À propos</a><a href="#methode">Méthode</a><a href="#offres">Offres</a><a href="#estimation">Estimation</a></nav>
   <span class="avail">Réponse sous 24 h</span>
   <button class="icon-btn" id="themeBtn" type="button" aria-label="Thème : automatique"><svg data-ic="auto"></svg></button>
   <a class="btn acc sm nav-cta" href="#contact"><span>Devis<span class="long"> gratuit</span></span><svg class="arr" data-ic="arrow"></svg></a>
   <button class="icon-btn burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mnav"><svg data-ic="menu"></svg></button>
 </div></div></header>
 <nav class="mnav" id="mnav" aria-label="Menu mobile">
-  <a href="#vitrine">Exemples</a><a href="#lab">Compétences</a><a href="#apropos">À propos</a><a href="#offres">Offres</a><a href="#estimation">Estimation</a><a href="#methode">Méthode</a>
+  <a href="#vitrine">Exemples</a><a href="#lab">Compétences</a><a href="#apropos">À propos</a><a href="#methode">Méthode</a><a href="#offres">Offres</a><a href="#estimation">Estimation</a>
   <a class="btn acc" href="#contact">Demander un devis gratuit <svg class="arr" data-ic="arrow"></svg></a>
 </nav>
 
@@ -1120,6 +1120,27 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
     </div>
   </section>
 
+  <section id="methode" class="lab">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Méthode</p>
+        <h2 class="split rv">Comment se passe un projet</h2>
+      </div>
+      <div class="sm">
+        <div class="sm-stage" id="smStage" aria-hidden="true"><div class="sm-ground"></div><div class="sm-cap" id="smCap"></div></div>
+        <div>
+          <ol class="steps" id="steps">
+            <li><button type="button" data-s="0"><span class="sn">01</span><span class="h">Appel découverte</span><span class="sd">30 min · gratuit</span><span class="p"><span>On parle de votre activité, de vos clients et de vos objectifs. Vous recevez un devis détaillé sous 48 h.</span></span><span class="pb"><i></i></span></button></li>
+            <li><button type="button" data-s="1"><span class="sn">02</span><span class="h">Maquette</span><span class="sd">semaine 1</span><span class="p"><span>Je dessine vos pages. On les ajuste ensemble jusqu'à ce qu'elles vous ressemblent.</span></span><span class="pb"><i></i></span></button></li>
+            <li><button type="button" data-s="2"><span class="sn">03</span><span class="h">Développement</span><span class="sd">semaines 2 à 3</span><span class="p"><span>Je construis le site. Vous suivez l'avancement sur un lien de prévisualisation.</span></span><span class="pb"><i></i></span></button></li>
+            <li><button type="button" data-s="3"><span class="sn">04</span><span class="h">Mise en ligne</span><span class="sd">semaine 4</span><span class="p"><span>Votre site est publié et référencé. Je vous montre comment le modifier vous-même.</span></span><span class="pb"><i></i></span></button></li>
+          </ol>
+          <div class="sm-ctl"><button class="icon-btn" id="smPlay" type="button" aria-label="Mettre en pause"><svg data-ic="pause"></svg></button><span id="smLbl">Lecture automatique</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="offres">
     <div class="wrap">
       <div class="sec-head row">
@@ -1213,27 +1234,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
           <button class="btn" type="button" id="eSend">Recevoir ce devis détaillé <svg class="arr" data-ic="arrow"></svg></button>
           <p class="note" id="eNote" style="margin:0">Prix nets, TVA non applicable (art. 293 B du CGI). Estimation indicative : le prix final est fixé dans le devis.</p>
         </aside>
-      </div>
-    </div>
-  </section>
-
-  <section id="methode" class="lab">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Méthode</p>
-        <h2 class="split rv">Comment se passe un projet</h2>
-      </div>
-      <div class="sm">
-        <div class="sm-stage" id="smStage" aria-hidden="true"><div class="sm-ground"></div><div class="sm-cap" id="smCap"></div></div>
-        <div>
-          <ol class="steps" id="steps">
-            <li><button type="button" data-s="0"><span class="sn">01</span><span class="h">Appel découverte</span><span class="sd">30 min · gratuit</span><span class="p"><span>On parle de votre activité, de vos clients et de vos objectifs. Vous recevez un devis détaillé sous 48 h.</span></span><span class="pb"><i></i></span></button></li>
-            <li><button type="button" data-s="1"><span class="sn">02</span><span class="h">Maquette</span><span class="sd">semaine 1</span><span class="p"><span>Je dessine vos pages. On les ajuste ensemble jusqu'à ce qu'elles vous ressemblent.</span></span><span class="pb"><i></i></span></button></li>
-            <li><button type="button" data-s="2"><span class="sn">03</span><span class="h">Développement</span><span class="sd">semaines 2 à 3</span><span class="p"><span>Je construis le site. Vous suivez l'avancement sur un lien de prévisualisation.</span></span><span class="pb"><i></i></span></button></li>
-            <li><button type="button" data-s="3"><span class="sn">04</span><span class="h">Mise en ligne</span><span class="sd">semaine 4</span><span class="p"><span>Votre site est publié et référencé. Je vous montre comment le modifier vous-même.</span></span><span class="pb"><i></i></span></button></li>
-          </ol>
-          <div class="sm-ctl"><button class="icon-btn" id="smPlay" type="button" aria-label="Mettre en pause"><svg data-ic="pause"></svg></button><span id="smLbl">Lecture automatique</span></div>
-        </div>
       </div>
     </div>
   </section>
@@ -1942,7 +1942,7 @@ const PCS = [
   {id:"cur", cls:"sm-cur", boil:1, html:CUR, pt:1, st:[{f:132, o:1, p:() => R("curStart")}, {f:140, p:() => tip(absB("cta", true), .55, .6), dur:6}, {f:141, cls:"press"}, {f:144, cls:""}, {f:172, o:0}]},
   {id:"notif", cls:"sm-notif paper", html:`<span class="ntime">09:41</span><div class="nt" data-n="n1"><i></i><b>Nouvelle demande de devis</b><small>Fuite sous l'évier · Nantes</small></div><div class="nt" data-n="n2"><i></i><b>Nouvelle demande de devis</b><small>Rénovation de salle de bain</small></div>`,
     st:[{f:145, o:1, g:() => R("notif"), r:-2}]},
-  {id:"endc", cls:"sm-end paper", html:'<b>Votre site en 4 semaines</b><span>De l\'appel découverte à la mise en ligne.</span><a class="btn acc sm" href="#contact" tabindex="-1">Lancer mon projet <svg class="arr" data-ic="arrow"></svg></a>', st:[{f:ENDCARD, o:1, g:() => R("endc")}]}];
+  {id:"endc", cls:"sm-end paper", html:'<b>Votre site en 4 semaines</b><span>De l\'appel découverte à la mise en ligne.</span><a class="btn acc sm" href="#offres" tabindex="-1">Voir les offres <svg class="arr" data-ic="arrow"></svg></a>', st:[{f:ENDCARD, o:1, g:() => R("endc")}]}];
 const BL = {hdr:[[40,"wire"],[86,"fill"]], hero:[[47,"wire"],[92,"fill"]], zone:[[53,"wire"],[116,"fill"]], cta:[[59,"wire"],[110,"fill"]], img:[[62,"wire"],[98,"fill"]], s1:[[66,"wire"],[102,"fill"]], s2:[[68,"wire"],[104,"fill"]], s3:[[70,"wire"],[106,"fill"]], badge:[[142,"fill"]]};
 const NT = {n1:[[148,"fill"]], n2:[[162,"fill"]]};
 PCS.forEach(p => { const el = document.createElement("div"); el.className = "pc " + p.cls; el.innerHTML = p.html; smSt.appendChild(el); p.el = el; p.base = "pc " + p.cls; p.vis = false; });
