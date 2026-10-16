@@ -606,10 +606,10 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent);
 .nd.sv svg{color:var(--accent)}
 .nd.hit{border-color:var(--ok);box-shadow:0 0 0 5px color-mix(in srgb,var(--ok) 25%,transparent);animation:pop .4s var(--ease)}
 .nd.hit svg{color:var(--ok)}
-.ln{position:relative;height:2px;background:repeating-linear-gradient(90deg,var(--muted) 0 6px,transparent 6px 10px);opacity:.7}
-.ln span{position:absolute;left:50%;bottom:.6rem;transform:translateX(-50%);font:500 .55rem/1 var(--f-body);white-space:nowrap;color:var(--muted)}
+.fln{position:relative;height:2px;background:repeating-linear-gradient(90deg,var(--muted) 0 6px,transparent 6px 10px);opacity:.7}
+.fln span{position:absolute;left:50%;bottom:.6rem;transform:translateX(-50%);font:500 .55rem/1 var(--f-body);white-space:nowrap;color:var(--muted)}
 .pk{position:absolute;top:50%;left:0;width:12px;height:12px;border-radius:50%;background:var(--bad);transform:translate(-50%,-50%);opacity:0;box-shadow:0 0 0 4px color-mix(in srgb,var(--bad) 25%,transparent)}
-@media (max-width:620px){.ln span{display:none}.nd small{display:none}}
+@media (max-width:620px){.fln span{display:none}.nd small{display:none}}
 .term{background:#0F1222;color:#C9CCF5;border-radius:14px;padding:.9rem 1.1rem 1rem;font:400 .72rem/1.75 var(--f-mono);min-height:10rem}
 .term .tb{display:flex;gap:6px;margin-bottom:.6rem}
 .term .tb i{width:9px;height:9px;border-radius:50%;background:#2B2F4A}
@@ -1041,9 +1041,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
         <div class="card secw">
           <div class="flow" aria-hidden="true">
             <div class="nd"><svg data-ic="laptop"></svg><b>Navigateur</b><small>Visiteur ou pirate</small></div>
-            <div class="ln"><span>HTTPS chiffré</span><i class="pk" id="pk"></i></div>
+            <div class="fln"><span>HTTPS chiffré</span><i class="pk" id="pk"></i></div>
             <div class="nd sv" id="ndSrv"><svg data-ic="shield"></svg><b>Serveur</b><small>Code sensible et contrôles</small></div>
-            <div class="ln"><span>Requêtes préparées</span></div>
+            <div class="fln"><span>Requêtes préparées</span></div>
             <div class="nd"><svg data-ic="db"></svg><b>Base de données</b><small>Mots de passe hachés</small></div>
           </div>
           <p class="lbl">Lancer une attaque (simulation)</p>
