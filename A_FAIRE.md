@@ -35,7 +35,7 @@ Permettre au client de modifier son site lui-même, sans toucher au code.
 - Créer l'adresse e-mail pro sur Hostinger avec le nom de domaine, puis remplacer mathieuxwebpro@gmail.com partout.
 
 ## En attente
-- Adresse Formspree, pour recevoir les demandes du formulaire.
+- Formspree branché (https://formspree.io/f/xkjokplr) : une fois le site en ligne, faire une première demande test, confirmer le formulaire si Formspree le demande, puis limiter les domaines autorisés au nom de domaine du site (réglages du formulaire sur Formspree).
 - Liens et captures des vrais sites clients (section « Ils m'ont fait confiance »).
 - Infos pour les mentions légales et les CGV : nom, SIRET, adresse, téléphone.
 - CGV : moyens de paiement acceptés, médiateur de la consommation (obligatoire pour les clients particuliers), ville du tribunal, taux horaire des retouches (45 € par défaut).
