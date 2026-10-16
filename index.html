@@ -1513,7 +1513,7 @@ const P = {
     cards:[{t:"Séance individuelle",d:"60 minutes, au cabinet",m:"60 €"},{t:"Forfait 5 séances",d:"Suivi personnalisé",m:"270 €"},{t:"En visio",d:"Partout en France",m:"60 €"}],
     info:{addr:"18 cours de l'Intendance, 33000 Bordeaux",hours:"Lundi au samedi · 9 h – 20 h",tel:"05 67 89 01 23"}, col:"#8E62BF", bg:"#EFE9F5"}
 };
-const KEYS = Object.keys(P); let cur = "artisan", busy = false, cartN = 0;
+const KEYS = ["artisan", "avocat", "resto", "boutique", "bien"]; let cur = "artisan", busy = false, cartN = 0;
 
 const heroMock = $("#heroMock"), mkNav = $("#mkNav"), mkCopy = $("#mkCopy"), mkCards = $("#mkCards"), mkHint = $("#mkHint"), mkCredit = $("#mkCredit"), heroUrl = $("#heroUrl"), seg = $("#seg");
 seg.insertAdjacentHTML("beforeend", KEYS.map(k => `<button type="button" data-k="${k}" aria-pressed="${k === cur}">${ic(P[k].ic)}${P[k].label}</button>`).join("")); icons(seg);
