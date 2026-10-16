@@ -13,6 +13,19 @@ Plusieurs petits sites d'exemple bien distincts, pour aider le client à défini
 - Effets de survol, effets visuels, palettes de couleurs, associations de polices.
 - Le client choisit ce qu'il aime ; ses choix complètent le questionnaire.
 
+## 3. Éditeur client « mode édition » (idée validée, à faire plus tard)
+Permettre au client de modifier son site lui-même, sans toucher au code.
+- Choix retenus : outil **web** (pas de .exe), mise en page **verrouillée** pour garder un beau design, IA **en ligne** (pas d'IA locale type Qwen, trop lourde pour les PC des clients).
+- Étape 0, démo de vente : bouton « Modifier ce site » sur les exemples de la vitrine (modifier un texte, changer une photo, réordonner deux sections, publier).
+- V1 : espace d'administration sécurisé ; modification directe des textes, photos, prix, horaires, carte ou produits ; aperçu avant publication ; retour en arrière.
+- V2 : ajouter, retirer et réordonner des sections toutes prêtes ; couleurs choisies parmi une palette validée.
+- V3 : assistant IA (rédiger un texte, corriger les fautes), inclus dans le suivi Sérénité.
+- Briques possibles : GrapesJS (glisser-déposer open source), TinaCMS ou Decap CMS (édition de contenu).
+- Offre : inclus dans Vitrine Pro et Boutique, ou en option (vers 190 €).
+
+## Petites retouches à décider
+- Section Secteurs : mettre aussi « Artisans et bâtiment » en premier panneau ouvert (comme la vitrine) ?
+
 ## En attente
 - Adresse Formspree, pour recevoir les demandes du formulaire.
 - Liens et captures des vrais sites clients (section « Ils m'ont fait confiance »).
